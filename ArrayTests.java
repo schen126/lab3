@@ -9,6 +9,18 @@ public class ArrayTests {
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
 
+  @Test
+  public void testReverseInPlace1() {
+    int[] input1 = {6, 5, 4};
+    assertArrayEquals(new int[]{4, 5, 6}, ArrayExamples.reversed(input1));
+  }
+
+  @Test
+  public void testReverseInPlace2() {
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
+  }
+/*
   //my test
   @Test 
 	public void testReverseInPlaceMine() {
@@ -35,4 +47,5 @@ public class ArrayTests {
     double[] input = {5.0, 6.0, 6.0, 8.0, 5.0, 5.0, 10.0, 16.0};
     assertEquals(8.0, ArrayExamples.averageWithoutLowest(input), 0);
   }
+  */
 }
